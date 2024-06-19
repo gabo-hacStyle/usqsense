@@ -9,17 +9,9 @@ export const metadata: Metadata = {
 };
 const page = async () =>{
 
-  const moviesData = await fetch('http://localhost:3000/api/', 
-  {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    cache: 'force-cache'
-  });
-  const data = await moviesData.json();
+ 
+  const movies = await getMotos();
 
-  const movies = data.movies;
 
   return (
     <div className="container">
