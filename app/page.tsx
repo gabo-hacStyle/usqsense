@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description: "A buen precio mi pana!",
   icons: ['/vercel.svg']
 };
+
+export const dynamic = 'force-dynamic';
+
 const page = async () =>{
 
  
